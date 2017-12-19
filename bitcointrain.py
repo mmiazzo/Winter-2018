@@ -16,7 +16,7 @@ print(df.head())
 
 forecast_col='Close'
 df.fillna(value=-99999, inplace=True)
-forecast_out=10 #forecast Bitcoin Close price 10 dads into the future
+forecast_out=10 #forecast Bitcoin Close price 10 days into the future
 
 df['label']=df[forecast_col].shift(-forecast_out) #Bitcoin Close price 10 days into future
 
